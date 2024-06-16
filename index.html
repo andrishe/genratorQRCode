@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Generateur QR Code</title>
+  </head>
+  <body>
+    <div class="header">
+      
+      <div class="box">
+        <h1>Generateur de QR Code</h1>
+      <hr />
+
+      <div class="sqrcode"></div>
+     
+        <div class="qrcode"></div>
+    
+      
+      <input type="text" class="input" placeholder="Entrez votre lien ici..."
+      onChange="generateQRCode()"
+       />
+       <button class="download-button">Télécharger votre QRCode</button>
+      </div>
+
+
+
+    </div>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="/main.js"></script>
+  </body>
+</html>
