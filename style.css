@@ -34,7 +34,7 @@ hr {
 }
 
 input[type="text"] {
-  width: 100%;
+  width: 100vh;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -70,4 +70,25 @@ button {
 button:hover {
   background-color: #dddddd;
   color: #333;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    width: 80%; /* Changed from 80vh to 80% */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"] {
+    width: 80%; /* Changed from 60vh to 100% */
+  }
 }
